@@ -35,6 +35,27 @@ encounter. A slew of planned enemies are as follows:
 * **Goomba**        -> The standard SMW enemy. Moves from right to left.
 * **Koopa**         -> Another classic enemy. Moves/jumpbs from right to left.
 
+###Current Development
+The following things contains a list of things in progress/todo:
+
+* **Create basic testing level**                             -> Complete
+* **Create Character and movement**                          -> Complete
+* **Create basic enemy and movement**                        -> Complete
+* **Enable damage/death capabilities**                       -> Complete
+* **Create basic weapons for character**                     -> Complete
+* **Replace test graphics with real Mario graphics**         -> TODO
+* **Add Background music**                                   -> TODO
+* **Add sound effects (jumping, hitting, etc)**              -> TODO
+* **Create a basic HUD**                                     -> TODO
+* **Create opening screen**                                  -> TODO
+* **Transition between levels**                              -> TODO
+* **Checkpoint entities**                                    -> TODO
+* **Only Spawn enemies when in proximity to player**         -> TODO
+
+###Useful Links
+
+* **Spawn enemies when in proximity to player** : <http://impactjs.com/forums/help/spawn-entities-just-outside-of-players-view/>
+
 ###Future Development
 Although this project's original plans are to re-create Super Mario 
 World using Javascript, this is only the core design. The final goal
