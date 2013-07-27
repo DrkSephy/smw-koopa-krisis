@@ -25,12 +25,14 @@ to potential level-breaking capabilities.
 
 ###Power-ups
 A staple of SMW: power-ups. The following power-ups are planned:
+
     * **Fire Flower**   -> Shoots fire balls (2 MAX on screen). 
    
 
 ###Enemy AI
 A huge part of this project will be to create enemies for the player to
 encounter. A slew of planned enemies are as follows:
+
     * **Goomba**        -> The standard SMW enemy. Moves from right to left.
     * **Koopa**         -> Another classic enemy. Moves/jumpbs from right to left.
 
@@ -57,6 +59,7 @@ a magical weapon which fires bolts would be simpler for a starting point.
 
 #####Inventory
 An inventory of stored items. Some items which would be ideal:
+
     * **Potion**        -> Recovers health by X amount.
     * **Ether**         -> Recovers mana by X amount.
 
