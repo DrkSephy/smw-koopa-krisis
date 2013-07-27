@@ -11,17 +11,16 @@ This project also aims to be a foundation for a potential project
 for the CCNY Association of Computing Machinery (ACM) Game Development
 Special Interest Group(SIG). 
 
-As a SMW clone, the goals are as follows:
+###Installation
+In order to run this game, you will need a copy of the Impact.js library,
+which can be purchased for 99$ here: http://impactjs.com/buy-impact
+In order to use the built-in Tile Editor Weltmeister, you will need to
+make sure that Apache and PHP are running on your machine. Instead of
+using Apache, there is a python script included in this project named
+"Server.py", which is a self-contained web server specifically for
+running the impact.js game file as well as Weltmeister. For more
+information, Server.py can be found at: https://github.com/amadeus/python-impact.
 
-###Side-scrolling levels
-A basis of SMW. All levels will consist of left->right side-scrolling,
-where the player must naviagate to the end of the level without losing
-all of their lives. 
-
-###Running/Jumping Physics
-Our main player sprite(Mario) will have all movement handlers fully
-functional(Running, Jumping, Swimming). Flying will be disabled due
-to potential level-breaking capabilities. 
 
 ###Power-ups
 A staple of SMW: power-ups. The following power-ups are planned:
@@ -60,8 +59,8 @@ a magical weapon which fires bolts would be simpler for a starting point.
 #####Inventory
 An inventory of stored items. Some items which would be ideal:
 
-* **Potion**        -> Recovers health by X amount.
-* **Ether**         -> Recovers mana by X amount.
+* **Mushroom**        -> Recovers health by X amount.
+
 
 
     
