@@ -13,13 +13,13 @@ Special Interest Group(SIG).
 
 ###Installation
 In order to run this game, you will need a copy of the Impact.js library,
-which can be purchased for 99$ here: http://impactjs.com/buy-impact
+which can be purchased for 99$ here: <http://impactjs.com/buy-impact/>
 In order to use the built-in Tile Editor Weltmeister, you will need to
 make sure that Apache and PHP are running on your machine. Instead of
 using Apache, there is a python script included in this project named
 "Server.py", which is a self-contained web server specifically for
 running the impact.js game file as well as Weltmeister. For more
-information, Server.py can be found at: https://github.com/amadeus/python-impact.
+information, Server.py can be found at: <https://github.com/amadeus/python-impact/>.
 
 
 ###Power-ups
