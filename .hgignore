@@ -1,5 +1,4 @@
 syntax: glob
-media/**
 tools/**
 weltmeister.html
 python-impact/**
