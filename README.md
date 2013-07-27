@@ -25,15 +25,40 @@ to potential level-breaking capabilities.
 
 ###Power-ups
 A staple of SMW: power-ups. The following power-ups are planned:
-
-    * **Mushroom**      -> The standard power-up, makes Mario bigger.
     * **Fire Flower**   -> Shoots fire balls (2 MAX on screen). 
-    * **Feather**       -> Will be disabled to make levels non-skippable.
+   
 
 ###Enemy AI
 A huge part of this project will be to create enemies for the player to
 encounter. A slew of planned enemies are as follows:
-
     * **Goomba**        -> The standard SMW enemy. Moves from right to left.
     * **Koopa**         -> Another classic enemy. Moves/jumpbs from right to left.
+
+###Future Development
+Although this project's original plans are to re-create Super Mario 
+World using Javascript, this is only the core design. The final goal
+would be to create a side-scrolling action RPG, similar to Legend of
+Zelda 2. Regarding storyline, that may be tacked on at the end, or 
+possible proposed. As for now, the game will simply progress as a 
+straightforward platformer. The proposed add-ons are as follows:
+
+#####Level-up System
+Incorporate a level-up system where stats such as health, strength,
+defense, speed (something akin to Fire Emblem?) increase upon level
+ups. Normally, score doesn't serve an actual purpose in a Mario game.
+However, we'll use the score counter as a basis of level-up milestons,
+just like Super Paper Mario did. Whether the player's stats will 
+increase randomly (Fire Emblem) or selectively is to be determined.
+
+#####Add Weapons
+Naturally, an action RPG would require some sort of inventory of weapons.
+Swinging a sword would be ideal (and really cool), but perhaps creating
+a magical weapon which fires bolts would be simpler for a starting point.
+
+#####Inventory
+An inventory of stored items. Some items which would be ideal:
+    * **Potion**        -> Recovers health by X amount.
+    * **Ether**         -> Recovers mana by X amount.
+
+
     
