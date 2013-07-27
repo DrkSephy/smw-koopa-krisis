@@ -57,6 +57,7 @@ The following things contains a list of things in progress/todo:
 * **Spawn enemies when in proximity to player** : <http://impactjs.com/forums/help/spawn-entities-just-outside-of-players-view/>
 * **Level Changing** : <http://impactjs.com/forums/help/moving-between-rooms-in-rpg/page/1/>
 
+
 ###Future Development
 Although this project's original plans are to re-create Super Mario 
 World using Javascript, this is only the core design. The final goal
