@@ -72,21 +72,70 @@ encounter. A slew of planned enemies are as follows:
 * **Koopa**         -> Another classic enemy. Moves/jumpbs from right to left.
 
 ###Current Development
-The following things contains a list of things in progress/todo:
 
-* **Create basic testing level**                             -> Complete
-* **Create Character and movement**                          -> Complete
-* **Create basic enemy and movement**                        -> Complete
-* **Enable damage/death capabilities**                       -> Complete
-* **Create basic weapons for character**                     -> Complete
-* **Replace test graphics with real Mario graphics**         -> TODO
-* **Add Background music**                                   -> TODO
-* **Add sound effects (jumping, hitting, etc)**              -> TODO
-* **Create a basic HUD**                                     -> TODO
-* **Create opening screen**                                  -> TODO
-* **Transition between levels**                              -> TODO
-* **Checkpoint entities**                                    -> TODO
-* **Only Spawn enemies when in proximity to player**         -> TODO
+* **Create basic testing level**                            
+
+    Status: 
+        [X] Two levels have been completed using test graphics.
+        [ ] Graphics must be swapped out for more appealing ones.
+
+* **Create Character and movement**                         
+
+    Status: 
+        [X] Test character has been inserted and movement/jump is enabled.
+        [ ] New character sprite needs to be inserted/drawn. 
+
+* **Create basic enemy and movement**                        
+
+    Status: 
+        [X] One enemy has been completed. Enemy behavior can be used 
+            to create new enemies, only a sprite sheet is needed.
+
+* **Enable damage/death capabilities**                      
+
+    Status: Complete.
+        [X] Character can inflict/recieve damage.
+
+* **Create basic weapons for character**                     
+
+    Status: 
+        [X] Character can shoot bullets/fire grenades, as well as
+           switch between the two. 
+        [X] Weapon switching system has been implemented
+        [ ] Need more weapons, and graphics.
+
+* **Add Background music**                                   
+
+    Status: 
+        [X] Level theme has been added from resource pack.
+        [X] Shooting, Jumping and Death Sound Effects added.
+
+* **Create a basic HUD**                                     
+    
+    Status: 
+        [ ] Add HUD for life/score counters, as well as a timer.
+
+* **Create screens**                                  
+
+    Status: 
+        [ ] Add a basic "title" screen. Will be replaced later.
+        [ ] Add a "pause" screen.
+        [ ] Add transitional screens.
+
+* **Transition between levels**                              
+
+    Status: Complete.
+        [X] Create an entity for switching between levels.
+
+* **Checkpoint entities**                                    
+
+    Status:
+        [ ] Create method/entity for saving midway through levels.
+
+* **Only Spawn enemies when in proximity to player**         
+
+    Status:
+        [ ] Create method for enemies not to spawn at the same time.
 
 ###Useful Links
 
@@ -94,6 +143,7 @@ The following things contains a list of things in progress/todo:
 * **Level Changing** : <http://impactjs.com/forums/help/moving-between-rooms-in-rpg/page/1/>
 
 ###Credits
+----------
 
 Jesse Freeman: Introducing HTML5 Game Development
 -------------------------------------------------
