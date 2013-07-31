@@ -1,5 +1,5 @@
-Super Mario World: Impact.js
-----------------------------
+###Super Mario World: Impact.js
+-------------------------------
 
 Super Mario World: Impact.js aims to recreate the original Super
 Mario World (SMW) platformer from the Super Nintendo (SNES) using
@@ -12,6 +12,7 @@ for the CCNY Association of Computing Machinery (ACM) Game Development
 Special Interest Group(SIG). 
 
 ###Installation
+---------------
 In order to run this game, you will need a copy of the Impact.js library,
 which can be purchased for 99$ here: <http://impactjs.com/buy-impact/>
 
@@ -59,12 +60,14 @@ This will create two localhost addresses where you can access the game as well a
 
 
 ###Power-ups
+------------
 A staple of SMW: power-ups. The following power-ups are planned:
 
 * **Fire Flower**   -> Shoots fire balls (2 MAX on screen). 
    
 
 ###Enemy AI
+-----------
 A huge part of this project will be to create enemies for the player to
 encounter. A slew of planned enemies are as follows:
 
@@ -161,6 +164,7 @@ Contributors
 
 
 ###Future Development
+---------------------
 Although this project's original plans are to re-create Super Mario 
 World using Javascript, this is only the core design. The final goal
 would be to create a side-scrolling action RPG, similar to Legend of
