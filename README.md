@@ -73,30 +73,30 @@ encounter. A slew of planned enemies are as follows:
 
 ###Current Development
 
-* **Create basic testing level**                            
+Create basic testing level                           
 
     Status: 
         [X] Two levels have been completed using test graphics.
         [ ] Graphics must be swapped out for more appealing ones.
 
-* **Create Character and movement**                         
+Create Character and movement                        
 
     Status: 
         [X] Test character has been inserted and movement/jump is enabled.
         [ ] New character sprite needs to be inserted/drawn. 
 
-* **Create basic enemy and movement**                        
+Create basic enemy and movement                      
 
     Status: 
         [X] One enemy has been completed. Enemy behavior can be used 
             to create new enemies, only a sprite sheet is needed.
 
-* **Enable damage/death capabilities**                      
+Enable damage/death capabilities                    
 
     Status: Complete.
         [X] Character can inflict/recieve damage.
 
-* **Create basic weapons for character**                     
+Create basic weapons for character                   
 
     Status: 
         [X] Character can shoot bullets/fire grenades, as well as
@@ -104,43 +104,45 @@ encounter. A slew of planned enemies are as follows:
         [X] Weapon switching system has been implemented
         [ ] Need more weapons, and graphics.
 
-* **Add Background music**                                   
+Add Background music                                 
 
     Status: 
         [X] Level theme has been added from resource pack.
         [X] Shooting, Jumping and Death Sound Effects added.
 
-* **Create a basic HUD**                                     
+Create a basic HUD                                    
     
     Status: 
         [ ] Add HUD for life/score counters, as well as a timer.
 
-* **Create screens**                                  
+Create screens                               
 
     Status: 
         [ ] Add a basic "title" screen. Will be replaced later.
         [ ] Add a "pause" screen.
         [ ] Add transitional screens.
 
-* **Transition between levels**                              
+Transition between levels                              
 
     Status: Complete.
         [X] Create an entity for switching between levels.
 
-* **Checkpoint entities**                                    
+Checkpoint entities                                 
 
     Status:
         [ ] Create method/entity for saving midway through levels.
 
-* **Only Spawn enemies when in proximity to player**         
+Only Spawn enemies when in proximity to player         
 
     Status:
         [ ] Create method for enemies not to spawn at the same time.
+
 
 ###Useful Links
 
 * **Spawn enemies when in proximity to player** : <http://impactjs.com/forums/help/spawn-entities-just-outside-of-players-view/>
 * **Level Changing** : <http://impactjs.com/forums/help/moving-between-rooms-in-rpg/page/1/>
+
 
 ###Credits
 ----------
