@@ -1,7 +1,7 @@
-###Super Mario World: Impact.js
--------------------------------
+###About
+----
 
-Super Mario World: Impact.js aims to recreate the original Super
+Super Mario World - Koopa Krisis aims to recreate the original Super
 Mario World (SMW) platformer from the Super Nintendo (SNES) using
 JavaScript, HTML5 and CSS. Impact.js is a game engine which is ideal
 for games involving 2D graphics, side-scrolling, collisions and it 
@@ -12,52 +12,28 @@ for the CCNY Association of Computing Machinery (ACM) Game Development
 Special Interest Group(SIG). 
 
 ###Installation
----------------
-In order to run this game, you will need a copy of the Impact.js library,
-which can be purchased for 99$ here: <http://impactjs.com/buy-impact/>
+----
+NOTE-1: This game requires the use of a proprietary game engine, which
+can be [purchased here](http://impactjs.com/buy-impact/).
 
-In order to use the built-in Tile Editor Weltmeister, you will need to
-make sure that Apache and PHP are running on your machine. Some helpful
-links are provided below for assistance in setting up PHP, MySQL and Apache:
+NOTE-2: Portions of the game engine require PHP to be installed.
+Installing PHP is discussed [here](https://bitbucket.org/DrkSephy/smw-koopa-krisis/wiki/PHP%20Installation).
 
-Mac OS:
-
-     <http://php.about.com/od/phpbasics/ss/installMac.html>
-
-Windows: 
-    
-    <http://lifeofageekadmin.com/how-install-apache-2-4-php-5-4-and-mysql-5-5-21-on-windows-7/>
-
-For simpler installation, there are one-step solutions known as MAMP (for Macs)
-and XAMPP. These programs allow you to easily enable a web-server which has MySQL
-and PHP up and ready to go. Follow the links below to find these programs:
-
-MAMP (Mac OS):
-
-    <http://www.mamp.info/en/index.html> 
-
-XAMPP (Windows):
-    
-    <http://www.apachefriends.org/en/xampp.html>
-
-If you are not using MAMP/XAMPP and prefer to enable PHP and MySQL yourself, that
-is fine. If you have configured these already, then you can simply run the python
-script included called "Server.py", which is a self-contained web server specifically
-for running the Impact.js game file as well as Weltmeister. "Server.py" is part of the 
-package found at:  
-
-    <https://github.com/amadeus/python-impact/>
-
-After cloning the super-mario-world repository, simply:
-
-    cd super-mario-world
-    python server.py
-
-This will create two localhost addresses where you can access the game as well as Weltmeister:
-
-    Game:   http://localhost:8080
-    Editor: http://localhost:8080/editor
-
+    :::bash
+    # make the directory that will contain the repo
+    mkdir -p /path/to/repo/container/dir
+    cd /path/to/repo/container/dir
+    hg clone https://bitbucket.org/DrkSephy/smw-koopa-krisis
+    # download the zip file for ImpactJS sdk 
+    unzip /path/to/sdk/zip/file
+    cp impact/weltmeister.html smw-koopa-krisis/
+    cp -R impact/lib/ impact smw-koopa-krisis/lib
+    cp -R impact/lib/weltmeister smw-koopa-krisis/lib
+    cp -R impact/tools smw-koopa-krisis
+    rm -R impact LICENSE.txt
+	cd smw-koopa-krisis
+	# serve up the game
+	python server.py
 
 ###Power-ups
 ------------
