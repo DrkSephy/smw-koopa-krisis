@@ -1,8 +1,8 @@
-***Super Mario World - Koopa Krisis*** aims to recreate the original Super
-Mario World (SMW) platformer from the Super Nintendo (SNES) using
-JavaScript, HTML5 and CSS. Impact.js is a game engine which is ideal
-for games involving 2D graphics, side-scrolling, collisions and it 
-comes with its own level editor, Weltmeister. 
+***Super Mario World - Koopa Krisis*** aims to recreate the original
+Super Mario World (SMW) platformer from the Super Nintendo (SNES) using
+JavaScript, HTML5 and CSS. This game uses the ImpactJS game engine,
+which is ideal for games involving 2D graphics, side-scrolling, 
+collisions and comes with its own level editor (named Weltmeister). 
 
 This project also aims to be a foundation for a potential project 
 for the CCNY Association of Computing Machinery (ACM) Game Development
@@ -31,22 +31,6 @@ Installing PHP is discussed [here](https://bitbucket.org/DrkSephy/smw-koopa-kris
 	cd smw-koopa-krisis
 	# serve up the game
 	python server.py
-
-
-###Credits
-----------
-
-Jesse Freeman: Introducing HTML5 Game Development
--------------------------------------------------
-* Resouce pack (character sprites, enemy sprites, media)
-
-Super Mario World Central <http://www.smwcentral.net/>
-------------------------------------------------------
-* Custom graphics, music compositions and sprite sheets
-
-Contributors
-------------
-* Ian McBride : <https://bitbucket.org/ian_s_mcb>
 
 ##Contributors
 ----
