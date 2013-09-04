@@ -20,15 +20,20 @@ Installing PHP is discussed [here](https://bitbucket.org/DrkSephy/smw-koopa-kris
     # make the directory that will contain the repo
     mkdir -p /path/to/repo/container/dir
     cd /path/to/repo/container/dir
+	# clone repo
     hg clone https://bitbucket.org/DrkSephy/smw-koopa-krisis
-    # download the zip file for ImpactJS sdk 
+    # NOTE: download the zip file for ImpactJS sdk 
     unzip /path/to/sdk/zip/file
+	# copy ImpactJS sdk into local repo
     cp impact/weltmeister.html smw-koopa-krisis/
     cp -R impact/lib/ impact smw-koopa-krisis/lib
     cp -R impact/lib/weltmeister smw-koopa-krisis/lib
     cp -R impact/tools smw-koopa-krisis
     rm -R impact LICENSE.txt
 	cd smw-koopa-krisis
+	# download large game audio
+	wget https://bitbucket.org/DrkSephy/smw-koopa-krisis/downloads/Final.ogg
+	mv Final.ogg media/sounds
 	# serve up the game
 	python server.py
 
