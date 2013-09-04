@@ -22,7 +22,8 @@ Installing PHP is discussed [here](https://bitbucket.org/DrkSephy/smw-koopa-kris
     cd /path/to/repo/container/dir
 	# clone repo
     hg clone https://bitbucket.org/DrkSephy/smw-koopa-krisis
-    # NOTE: download the zip file for ImpactJS sdk 
+    # NOTE: use your browser to download the zip file for the ImpactJS sdk
+	# unzip the sdk files into current directory
     unzip /path/to/sdk/zip/file
 	# copy ImpactJS sdk into local repo
     cp impact/weltmeister.html smw-koopa-krisis/
