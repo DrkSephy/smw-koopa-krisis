@@ -1,0 +1,6 @@
+syntax: glob
+tools/**
+weltmeister.html
+python-impact/**
+lib**
+.DS_Store
