@@ -5,4 +5,4 @@ python-impact/**
 lib/impact
 lib/weltmeister
 media/sounds/Final.ogg
-.DS_Store
+*DS_Store*
