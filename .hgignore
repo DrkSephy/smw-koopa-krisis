@@ -1,0 +1,8 @@
+syntax: glob
+tools/**
+weltmeister.html
+python-impact/**
+lib/impact
+lib/weltmeister
+media/sounds/Final.ogg
+*DS_Store*

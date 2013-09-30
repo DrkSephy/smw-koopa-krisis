@@ -1,0 +1,68 @@
+Long-Term Goals
+---------------
+
+1. Create an overworld for level selection. (Not sure of a clear way to do this yet). 
+2. Figure out how to traverse to different sub-rooms in a level using only one level change entity.
+   i.e: There can be several doors in a level, and a player can enter them by pressing UP, and 
+   travel back and forth through these maps. This feature is high priority, since it removes 
+   linearity in the game.
+3. Possibly adding a "climb ladder" feature.
+
+
+To-do (September 20, 2013)
+--------------------------
+
+1. Stalker AI [ Kevin ]
+    
+    - COMPLETED.
+
+2. Ninji AI [ Kim ]
+
+    - In progress.
+
+3. Ledge Detection / Simple walking AI / Graphics upgrade [ David ]
+
+    - COMPLETED. 
+
+To-do (September 27, 2013)
+--------------------------
+
+1. Heads Up Display (HUD) upgrade [ Not taken up yet ]
+
+   - Replace current display of lives. Instead of displaying this.lives using a loop counter, replace
+     the entire life counter with simply a Mario head x # lives.
+   - Add a coin counter. Could be either a graphic of a coin, with the number of coins next to it. 
+     Another approach could be to simply spell out "coins". (Not sure which method looks better).
+   - Add an "Item" box to the center of the hud. Based on the weapon currently held by the player, 
+     draw the corresponding power-up images.
+
+2. Kill block [ Kim ]
+
+    - Currently, there is no way to kill an entity that falls into a bottomless pit/lava. This
+      Entity will be placed under lava/pits to kill any entity that makes contact with it. For
+      reference, look at how to create a box using only weltmesiter (from levelexit.js). The
+      collision properties will have to be changed to check against both A and B type entities,
+      and in the collidesWith() method, just call this.kill() whenever an entity collides with the
+      kill block.
+
+3. Thwomp AI [ Kim ]
+
+    - The behavior of this enemy is located in lib/game/entities/thwomp.js.
+      NOTE: The graphics for this enemy are -slightly- off. This is minor, will be fixed eventually.
+
+4. Bullet Shooter [ Kevin ]
+
+     - Behavior: The shooter itself will only fire if the player is a certain distance away from it.
+       It will not shoot if the player is very close to it. The entity that is spawned from the 
+       Bullet Shooter is the Bullet Bill entity.
+       NOTE: The bullet bills go through all obstacles, and only collide with the player.
+
+5. Bird (Needs a cooler name) [ Jorge ]
+
+     - COMPLETED.
+
+6. Jumping while moving forward AI [ Kevin ]
+
+     - COMPLETED.
+
+
