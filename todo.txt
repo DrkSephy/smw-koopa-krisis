@@ -6,6 +6,8 @@ Long-Term Goals
    i.e: There can be several doors in a level, and a player can enter them by pressing UP, and 
    travel back and forth through these maps. This feature is high priority, since it removes 
    linearity in the game.
+3. Possibly adding a "climb ladder" feature.
+
 
 To-do (September 20, 2013)
 --------------------------
@@ -57,6 +59,10 @@ To-do (September 27, 2013)
 
 5. Bird (Needs a cooler name) [ Jorge ]
 
-     - Behavior is described in lib/game/entities/bird.js.
+     - COMPLETED.
+
+6. Jumping while moving forward AI [ Kevin ]
+
+     - COMPLETED.
 
 
