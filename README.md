@@ -45,6 +45,7 @@ Installing PHP is discussed [here](https://bitbucket.org/DrkSephy/smw-koopa-kris
 * Wan Kim Mok: <https://bitbucket.org/mk200789>
 * Kevin Chan: <https://bitbucket.org/chessmasterhong>
 * Jorge Yau:  <https://bitbucket.org/accountname>
+* Jonathan Reyes: <https://bitbucket.org/JARey>
 
 ##Special Thanks To
 ----
