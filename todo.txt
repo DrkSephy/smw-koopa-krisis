@@ -1,11 +1,15 @@
 Long-Term Goals
 ---------------
 
-1. Create an overworld for level selection. (Not sure of a clear way to do this yet). 
+1. Create an overworld for level selection. [David/Jorge]
+
 2. Figure out how to traverse to different sub-rooms in a level using only one level change entity.
    i.e: There can be several doors in a level, and a player can enter them by pressing UP, and 
    travel back and forth through these maps. This feature is high priority, since it removes 
-   linearity in the game.
+   linearity in the game. [Jonathan] 
+
+   - COMPLETED. 
+
 3. Possibly adding a "climb ladder" feature.
 
 
@@ -27,7 +31,7 @@ To-do (September 20, 2013)
 To-do (September 27, 2013)
 --------------------------
 
-1. Heads Up Display (HUD) upgrade [ Not taken up yet ]
+1. Heads Up Display (HUD) upgrade [ David ]
 
    - Replace current display of lives. Instead of displaying this.lives using a loop counter, replace
      the entire life counter with simply a Mario head x # lives.
@@ -35,6 +39,8 @@ To-do (September 27, 2013)
      Another approach could be to simply spell out "coins". (Not sure which method looks better).
    - Add an "Item" box to the center of the hud. Based on the weapon currently held by the player, 
      draw the corresponding power-up images.
+
+     - In Progress.
 
 2. Kill block [ Kim ]
 
