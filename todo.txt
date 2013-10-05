@@ -3,6 +3,8 @@ Long-Term Goals
 
 1. Create an overworld for level selection. [David/Jorge]
 
+   - In progress.
+
 2. Figure out how to traverse to different sub-rooms in a level using only one level change entity.
    i.e: There can be several doors in a level, and a player can enter them by pressing UP, and 
    travel back and forth through these maps. This feature is high priority, since it removes 
@@ -58,7 +60,7 @@ To-do (September 27, 2013)
     - The behavior of this enemy is located in lib/game/entities/thwomp.js.
       NOTE: The graphics for this enemy are -slightly- off. This is minor, will be fixed eventually.
 
-    - In progress.
+    - COMPLETED.
 
 4. Bullet Shooter [ Kevin ]
 
@@ -84,7 +86,7 @@ To-do (October 4th, 2013 -> October 18th, 2013)
 
     - Stalks player when the player is not facing the boo. If the player is facing the boo, the boo will not follow.
 
-    - In progress.
+    - COMPLETED.
 
 2. Hammer Brothers [ Kevin ]
 
