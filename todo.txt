@@ -77,4 +77,59 @@ To-do (September 27, 2013)
 
      - COMPLETED.
 
+To-do (October 4th, 2013 -> October 18th, 2013)
+-----------------------------------------------
+
+1. Boo Enemy [ Jorge ]
+
+    - Stalks player when the player is not facing the boo. If the player is facing the boo, the boo will not follow.
+
+    - In progress.
+
+2. Hammer Brothers [ Kevin ]
+
+    - Shoots hammers periodically. 
+
+    - COMPLETED.
+
+3. Fire Brothers [ Kim ]
+
+    - Shoots a series of fireballs (spread out over time), then has a cool down, then begins to fire again. 
+      The graphics file to use is firebros.png. (Note: size is 24 x 24).
+
+4. Bony Beetle [ Kevin ]
+
+    Graphics file: new_bony_beetle.png
+    Note: Size of each frame is 30 x 30.
+
+    Behavior
+    --------
+    1. Plays walking frame. 
+    2. If the player is getting close to it, it will transition into its spiky state.
+    3. In the spiky state, if the player jumps on it then they take damage.
+    4. After a few seconds, reverts to walking. 
+    5. If the player jumps on it when this enemy is not spiky, it will turn into bones and regenerate after
+       a few seconds.
+
+5. Skeleton [ Kim ] 
+
+    Graphics file: skeleton.png
+    Note: Size of each frame is 33 x 26. 
+
+    Behavior
+    --------
+    1. Walks back and forth (it does not fall off ledges, see ledge detection code).
+    2. If the player jumps on it, it turns into bones.
+    3. After a few seconds, it regenerates to it's normal form.
+
+6. Fixing multiple music bug [ Jonathan ]
+
+    - With the addition of a new "door" entity, we have lost our functionality of having different songs for
+      different levels. The reason for this is that the director.js's loadlevel() method is being 
+      overridded by the loadLevel() method in door.js (I think). 
+
+
+
+
+
 
