@@ -113,6 +113,8 @@ To-do (October 4th, 2013 -> October 18th, 2013)
     5. If the player jumps on it when this enemy is not spiky, it will turn into bones and regenerate after
        a few seconds.
 
+    - COMPLETED.
+
 5. Skeleton [ Kim ] 
 
     Graphics file: skeleton.png
