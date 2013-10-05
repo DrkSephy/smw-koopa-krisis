@@ -42,7 +42,7 @@ To-do (September 27, 2013)
    - Add an "Item" box to the center of the hud. Based on the weapon currently held by the player, 
      draw the corresponding power-up images.
 
-     - In Progress.
+     - COMPLETED.
 
 2. Kill block [ Kim ]
 
