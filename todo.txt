@@ -195,7 +195,38 @@ including your name next to the task.
 
 3. A way to pause / unpause the game. [ Kevin ]
 
-    - COMPLETED. 
+    - COMPLETED.
+
+
+*******************************
+* Enemy Bug fixing / tweaking *   
+*******************************
+
+Currently, almost every enemy will damage the player if jumped on. Now that we have a substantial number of enemies to design 
+levels with, it's time that we get this fixed. 
+
+1. Go through each enemy and alter its collison code so that it does not damage the player if jumped on.
+   Note: If the enemy is spiky, it should damage the player if jumped on.
+
+    - [ NOT TAKEN UP YET ]
+
+
+2. Also, go through each enemy and alter its collision code so that it cannot be killed from below. 
+   Note: See the jumping_ninji entity's collidesWith method. It does not die from below.
+
+    - [ NOT TAKEN UP YET ]
+
+
+
+Also, all enemies are set to do X amount of damage to the player if they collide. It would be great if someone could go through
+each enemy and adjust the damage levels to be a little more varying (currently, everything does 2 or 3 damage to the player,
+while things like the bird.js's bombs will kill the player instantly). This feature isn't a priority, but it is certainly 
+needed for proper game balance and consistentcy (for example: all normal koopa's should do 2 damage, and all flying koopa's
+do 3 damage, ghosts can do 4, etc) and lastly, it's another task to do.
+
+    - [ NOT TAKEN UP YET ]
+
+
 
   
 ***********************
@@ -206,10 +237,13 @@ A while back, I stumbled upon this amazing extension of ImpactJS: http://collinh
 There are a number of features, some of which include methods to make buttons, text, and UI elements, abstractions for 
 creating upgrades and abilities (as well as enemy AI's), and a bunch of other things. My favorite feature is located in
 this demo:     http://coldspace.henklein.com/plugin_demo/
-The above link shows how to make a level very dark and shadowy (Of course this would be my favorite one), although it seems that this isn't a feature you can turn on only for a single level without some hacks. It would be great to have the shadow
+The above link shows how to make a level very dark and shadowy (Of course this would be my favorite one), although it seems
+that this isn't a feature you can turn on only for a single level without some hacks. It would be great to have the shadow
 casting atmosphere for a castle level.
 
-Anyways, I don't have any experience with using Impactplusplus, but if anyone finds a feature they'd like to implement from it, go right ahead. The documentation seems to be pretty good, although at times it is unclear exactly how to integrate the impactplusplus code with ImpactJS. Some notable things to check out for the future:
+Anyways, I don't have any experience with using Impactplusplus, but if anyone finds a feature they'd like to implement from it, go right ahead. 
+The documentation seems to be pretty good, although at times it is unclear exactly how to integrate the impactplusplus code with ImpactJS.
+Some notable things to check out for the future:
 
   1. The shadow casting code.
   2. The methods for creating UI elements. Eventually we'll be building GUI's.
@@ -224,8 +258,8 @@ As of now, I don't have any good ideas for new enemies. I know that both Kim and
 plant-like enemies located on this page: http://www.spriters-resource.com/game_boy_advance/sma4/sheet/22919/
 but there is one problem. These enemies are meant to be hidden inside pipes, and only expose themselves when
 they rise up. However, due to how layering works in ImpactJS, the entity layer will always have the highest
-priority and therefore these enemies will appear awkward (even if they come out of the ground). I will think
-about new features and new enemies as time goes on. 
+priority and therefore these enemies will appear awkward (even if they come out of the ground, since you will be
+able to see them due to the layering). I will think about new features and new enemies as time goes on. 
 
 
 
