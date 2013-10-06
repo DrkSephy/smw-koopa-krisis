@@ -189,16 +189,37 @@ including your name next to the task.
     
     Note: I've already included all of the necessary graphics for all of the above entities.
 
+    
     - COMPLETED.
 
 
-3. A way to pause / unpause the game.
+3. A way to pause / unpause the game. [ Kevin ]
+
+    - COMPLETED. 
+
+  
+***********************
+* Feature Inspiration *
+***********************
+
+A while back, I stumbled upon this amazing extension of ImpactJS: http://collinhover.github.io/impactplusplus/
+There are a number of features, some of which include methods to make buttons, text, and UI elements, abstractions for 
+creating upgrades and abilities (as well as enemy AI's), and a bunch of other things. My favorite feature is located in
+this demo:     http://coldspace.henklein.com/plugin_demo/
+The above link shows how to make a level very dark and shadowy (Of course this would be my favorite one), although it seems that this isn't a feature you can turn on only for a single level without some hacks. It would be great to have the shadow
+casting atmosphere for a castle level.
+
+Anyways, I don't have any experience with using Impactplusplus, but if anyone finds a feature they'd like to implement from it, go right ahead. The documentation seems to be pretty good, although at times it is unclear exactly how to integrate the impactplusplus code with ImpactJS. Some notable things to check out for the future:
+
+  1. The shadow casting code.
+  2. The methods for creating UI elements. Eventually we'll be building GUI's.
+  3. Perhaps the methods for enemies, might lead to even more creative AI's using Astar pathfinding methods.
 
 
+***************
+*General Notes*
+***************
 
-
-General Notes
--------------
 As of now, I don't have any good ideas for new enemies. I know that both Kim and Kevin expressed interest in the 
 plant-like enemies located on this page: http://www.spriters-resource.com/game_boy_advance/sma4/sheet/22919/
 but there is one problem. These enemies are meant to be hidden inside pipes, and only expose themselves when
