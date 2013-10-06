@@ -197,6 +197,14 @@ including your name next to the task.
 
     - COMPLETED.
 
+4. Using pipes to transition to levels (instead of the door graphic). [ NOT TAKEN UP YET ]
+
+    It was mentioned before that we should add pipes to transition between levels. To do this, 
+    we can simply use the new pipes graphics that I have inserted (pipes.png, size is 32 x 32)
+    and use the door.js entity to handle the transitions. It would be nice to have some sort of
+    animation of actually entering the pipe.
+
+
 
 *******************************
 * Enemy Bug fixing / tweaking *   
