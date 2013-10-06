@@ -154,7 +154,7 @@ including your name next to the task.
     More Notes: For reference, the reason why I used a seperate game instance for this specific level 
                 is because it requires a different player sprite/controls.
 
-2. A powerup system [ Not taken yet ]
+2. A powerup system [ David ]
 
     A much needed (major) improvement. As you are aware due to programming AI, no matter how difficult the 
     enemy is, it can be defeated by having powerups at the start(espeically the hammmer). The proposed replacement system   
