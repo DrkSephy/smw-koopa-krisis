@@ -189,6 +189,8 @@ including your name next to the task.
     
     Note: I've already included all of the necessary graphics for all of the above entities.
 
+    - COMPLETED.
+
 
 3. A way to pause / unpause the game.
 
