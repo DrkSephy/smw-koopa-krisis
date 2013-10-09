@@ -1,19 +1,121 @@
 Long-Term Goals
 ---------------
 
-1. Possibly adding a "climb ladder" feature.
+1. Create an overworld for level selection. [David/Jorge]
 
+   - In progress.
+
+2. Figure out how to traverse to different sub-rooms in a level using only one level change entity.
+   i.e: There can be several doors in a level, and a player can enter them by pressing UP, and 
+   travel back and forth through these maps. This feature is high priority, since it removes 
+   linearity in the game. [Jonathan] 
+
+   - COMPLETED. 
+
+3. Possibly adding a "climb ladder" feature.
+
+
+To-do (September 20, 2013)
+--------------------------
+
+1. Stalker AI [ Kevin ]
+    
+    - COMPLETED.
+
+2. Ninji AI [ Kim ]
+
+    - COMPLETED.
+
+3. Ledge Detection / Simple walking AI / Graphics upgrade [ David ]
+
+    - COMPLETED. 
+
+To-do (September 27, 2013)
+--------------------------
+
+1. Heads Up Display (HUD) upgrade [ David ]
+
+   - Replace current display of lives. Instead of displaying this.lives using a loop counter, replace
+     the entire life counter with simply a Mario head x # lives.
+   - Add a coin counter. Could be either a graphic of a coin, with the number of coins next to it. 
+     Another approach could be to simply spell out "coins". (Not sure which method looks better).
+   - Add an "Item" box to the center of the hud. Based on the weapon currently held by the player, 
+     draw the corresponding power-up images.
+
+     - COMPLETED.
+
+2. Kill block [ Kim ]
+
+    - Currently, there is no way to kill an entity that falls into a bottomless pit/lava. This
+      Entity will be placed under lava/pits to kill any entity that makes contact with it. For
+      reference, look at how to create a box using only weltmesiter (from levelexit.js). The
+      collision properties will have to be changed to check against both A and B type entities,
+      and in the collidesWith() method, just call this.kill() whenever an entity collides with the
+      kill block.
+
+    - COMPLETED. 
+
+3. Thwomp AI [ Kim ]
+
+    - The behavior of this enemy is located in lib/game/entities/thwomp.js.
+      NOTE: The graphics for this enemy are -slightly- off. This is minor, will be fixed eventually.
+
+    - COMPLETED.
+
+4. Bullet Shooter [ Kevin ]
+
+     - Behavior: The shooter itself will only fire if the player is a certain distance away from it.
+       It will not shoot if the player is very close to it. The entity that is spawned from the 
+       Bullet Shooter is the Bullet Bill entity.
+       NOTE: The bullet bills go through all obstacles, and only collide with the player.
+
+    - COMPLETED.
+
+5. Bird (Needs a cooler name) [ Jorge ]
+
+     - COMPLETED.
+
+6. Jumping while moving forward AI [ Kevin ]
+
+     - COMPLETED.
 
 To-do (October 4th, 2013 -> October 18th, 2013)
 -----------------------------------------------
 
-1. Fire Brothers [ Kim ]
+1. Boo Enemy [ Jorge ]
+
+    - Stalks player when the player is not facing the boo. If the player is facing the boo, the boo will not follow.
+
+    - COMPLETED.
+
+2. Hammer Brothers [ Kevin ]
+
+    - Shoots hammers periodically. 
+
+    - COMPLETED.
+
+3. Fire Brothers [ Kim ]
 
     - Shoots a series of fireballs (spread out over time), then has a cool down, then begins to fire again. 
       The graphics file to use is firebros.png. (Note: size is 24 x 24).
 
+4. Bony Beetle [ Kevin ]
 
-2. Skeleton [ Kim ] 
+    Graphics file: new_bony_beetle.png
+    Note: Size of each frame is 30 x 30.
+
+    Behavior
+    --------
+    1. Plays walking frame. 
+    2. If the player is getting close to it, it will transition into its spiky state.
+    3. In the spiky state, if the player jumps on it then they take damage.
+    4. After a few seconds, reverts to walking. 
+    5. If the player jumps on it when this enemy is not spiky, it will turn into bones and regenerate after
+       a few seconds.
+
+    - COMPLETED.
+
+5. Skeleton [ Kim ] 
 
     Graphics file: skeleton.png
     Note: Size of each frame is 33 x 26. 
@@ -24,7 +126,7 @@ To-do (October 4th, 2013 -> October 18th, 2013)
     2. If the player jumps on it, it turns into bones.
     3. After a few seconds, it regenerates to it's normal form.
 
-3. Fixing multiple music bug [ Jonathan ]
+6. Fixing multiple music bug [ Jonathan ]
 
     - With the addition of a new "door" entity, we have lost our functionality of having different songs for
       different levels. The reason for this is that the director.js's loadlevel() method is being 
@@ -52,21 +154,50 @@ including your name next to the task.
     More Notes: For reference, the reason why I used a seperate game instance for this specific level 
                 is because it requires a different player sprite/controls.
 
-    Even more notes: Here is how I envision the overworld working:
+2. A powerup system [ David ]
 
-            1. Overworld level is loaded. Player can navigate to a level and play it.
-            2. By clicking an entity on the overworld, load the corresponding level.
-            3. After getting to the end of the level, the player will collect an entity which
-               will complete the level and take the player back to the overworld. 
-            4. It would be great to be able to replace the level graphic on the overworld
-               with a new graphic to represent the level being beaten. Not sure how to do 
-               this.
-            5. Also, we need a method of blocking off the overworld (so that a player can not
-               move past a level they have not beaten. A lock of some sorts). 
-            6. Rinse and repeat 1-5. 
+    A much needed (major) improvement. As you are aware due to programming AI, no matter how difficult the 
+    enemy is, it can be defeated by having powerups at the start(espeically the hammmer). The proposed replacement system   
+    for powerups is as follows:
+
+    1. Remove all "weapons" (that is a direct reference to the source code, where powers are defined as weapons).
+       (This includes removing the code that allows you to TAB through weapons, since the player cannot carry
+       more than one powerup).
+    2. Use the question mark block provided (questionmark_block.png) to create an entity named (Itemblock) which
+       can spawn a variety of items when hit from -below-. These items include: [Mushroom, Green Mushroom,                 
+       Hammer Suit, Fire Flower, X number of Coins]. The behavior of the items are as follows:
+
+        2a. The Mushroom powerup will move randomly in either the right or left direction after being spawned, 
+            so that the player has to chase it to grab it. This powerup restores 10 health points. 
+            (See healthpotion.js for a code reference).
+
+        2b. The Green Mushroom has the same behavior as the Mushroom, except that it gives the player one 
+            extra life. (this.lives += 1).
+
+        2c. The Fire Flower will give the player the ability to throw fireballs.
+
+        2d. Ahh, the fun hammer suit. This power gives the player to destroy...the ability to throw hammers.
+            
+    3. The Item Blocks will have to be coded similar to the door, where you can enter a key-value pair to
+       set which item comes out when hit (or else you'll have to make 4 seperate entities). 
+
+    4. When the player picks up a power, they will now gain the ability to shoot that entity. 
+
+    5. If the player is hit, take away the powerup. Now, the only way the player can damage enemies is by jumping 
+       on them.
+
+    
+    Note: I've already included all of the necessary graphics for all of the above entities.
+
+    
+    - COMPLETED.
 
 
-2. Using pipes to transition to levels (instead of the door graphic). [ NOT TAKEN UP YET ]
+3. A way to pause / unpause the game. [ Kevin ]
+
+    - COMPLETED.
+
+4. Using pipes to transition to levels (instead of the door graphic). [ NOT TAKEN UP YET ]
 
     It was mentioned before that we should add pipes to transition between levels. To do this, 
     we can simply use the new pipes graphics that I have inserted (pipes.png, size is 32 x 32)
@@ -85,13 +216,13 @@ levels with, it's time that we get this fixed.
 1. Go through each enemy and alter its collison code so that it does not damage the player if jumped on.
    Note: If the enemy is spiky, it should damage the player if jumped on.
 
-    - [ NOT TAKEN UP YET ]
+    - [ Kevin ]
 
 
 2. Also, go through each enemy and alter its collision code so that it cannot be killed from below. 
    Note: See the jumping_ninji entity's collidesWith method. It does not die from below.
 
-    - [ NOT TAKEN UP YET ]
+    - [ Kevin ]
 
 
 
