@@ -155,6 +155,23 @@ To-do (October 4th, 2013 -> October 18th, 2013)
 
     - COMPLETED.
 
+*******************************
+* Enemy Bug fixing / tweaking *   
+*******************************
+
+Currently, almost every enemy will damage the player if jumped on. Now that we have a substantial number of enemies to design 
+levels with, it's time that we get this fixed. 
+
+1. Go through each enemy and alter its collison code so that it does not damage the player if jumped on.
+   Note: If the enemy is spiky, it should damage the player if jumped on. [ Kevin ]
+
+    - COMPLETED.
+
+
+2. Also, go through each enemy and alter its collision code so that it cannot be killed from below. 
+   Note: See the jumping_ninji entity's collidesWith method. It does not die from below. [ Kevin ]
+
+    - COMPLETED.
 
 
 
