@@ -74,36 +74,6 @@ including your name next to the task.
     animation of actually entering the pipe.
 
 
-
-*******************************
-* Enemy Bug fixing / tweaking *   
-*******************************
-
-Currently, almost every enemy will damage the player if jumped on. Now that we have a substantial number of enemies to design 
-levels with, it's time that we get this fixed. 
-
-1. Go through each enemy and alter its collison code so that it does not damage the player if jumped on.
-   Note: If the enemy is spiky, it should damage the player if jumped on. [ Kevin ]
-
-    - COMPLETED.
-
-
-2. Also, go through each enemy and alter its collision code so that it cannot be killed from below. 
-   Note: See the jumping_ninji entity's collidesWith method. It does not die from below. [ Kevin ]
-
-    - COMPLETED.
-
-
-Also, all enemies are set to do X amount of damage to the player if they collide. It would be great if someone could go through
-each enemy and adjust the damage levels to be a little more varying (currently, everything does 2 or 3 damage to the player,
-while things like the bird.js's bombs will kill the player instantly). This feature isn't a priority, but it is certainly 
-needed for proper game balance and consistentcy (for example: all normal koopa's should do 2 damage, and all flying koopa's
-do 3 damage, ghosts can do 4, etc) and lastly, it's another task to do.
-
-    - [ NOT TAKEN UP YET ]
-
-
-
   
 ***********************
 * Feature Inspiration *
