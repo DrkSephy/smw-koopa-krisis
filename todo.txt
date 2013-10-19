@@ -1,8 +1,6 @@
 Long-Term Goals
 ---------------
 
-1. Possibly adding a "climb ladder" feature.
-
 
 To-do (October 4th, 2013 -> October 18th, 2013)
 -----------------------------------------------

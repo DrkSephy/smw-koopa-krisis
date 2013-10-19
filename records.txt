@@ -14,7 +14,9 @@ Long-Term Goals
 
    - COMPLETED. 
 
-3. Possibly adding a "climb ladder" feature.
+3. Possibly adding a "climb ladder" feature. [ Kevin ]
+
+   - COMPLETED.
 
 
 To-do (September 20, 2013)
@@ -80,6 +82,14 @@ To-do (September 27, 2013)
 6. Jumping while moving forward AI [ Kevin ]
 
      - COMPLETED.
+
+7. Slope collision and movement fix [ Kevin ]
+
+    - After creating a new test level using placeholder graphics, it seems that sloped tiles are
+      indeed glitchy. The player interacts with them weird, seemingly floating over them (yet still
+      colliding with them). Will need to be figured out at some point.
+
+    - COMPLETED
 
 To-do (October 4th, 2013 -> October 18th, 2013)
 -----------------------------------------------
