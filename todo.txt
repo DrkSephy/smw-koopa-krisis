@@ -24,11 +24,6 @@ To-do (October 4th, 2013 -> October 18th, 2013)
     2. If the player jumps on it, it turns into bones.
     3. After a few seconds, it regenerates to it's normal form.
 
-3. Fixing multiple music bug [ Jonathan ]
-
-    - With the addition of a new "door" entity, we have lost our functionality of having different songs for
-      different levels. The reason for this is that the director.js's loadlevel() method is being 
-      overridded by the loadLevel() method in door.js (I think).
 
 
 ****************************
