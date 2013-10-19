@@ -59,7 +59,7 @@ including your name next to the task.
             6. Rinse and repeat 1-5. 
 
 
-2. Using pipes to transition to levels (instead of the door graphic). [ NOT TAKEN UP YET ]
+2. Using pipes to transition to levels (instead of the door graphic). [ Kevin ]
 
     It was mentioned before that we should add pipes to transition between levels. To do this, 
     we can simply use the new pipes graphics that I have inserted (pipes.png, size is 32 x 32)
