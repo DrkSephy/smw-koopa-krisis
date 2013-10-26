@@ -1,0 +1,127 @@
+Long-Term Goals
+---------------
+
+
+To-do (October 4th, 2013 -> October 18th, 2013)
+-----------------------------------------------
+
+1. Fire Brothers [ Kim ]
+
+    - Shoots a series of fireballs (spread out over time), then has a cool down, then begins to fire again. 
+      The graphics file to use is firebros.png. (Note: size is 24 x 24).
+
+
+2. Skeleton [ Kim ] 
+
+    Graphics file: skeleton.png
+    Note: Size of each frame is 33 x 26. 
+
+    Behavior
+    --------
+    1. Walks back and forth (it does not fall off ledges, see ledge detection code).
+    2. If the player jumps on it, it turns into bones.
+    3. After a few seconds, it regenerates to it's normal form.
+
+
+
+****************************
+* List of new things to do *
+****************************
+As stated in my recent e-mail, if you would like to take up any of the following things, feel free to do so by 
+including your name next to the task.
+
+1. Overworld [ David / ??? ]
+    
+    Notes: After tinkering around with this, I'm not sure of a good way to do this. Currently, the overworld
+           is a level itself which is loaded in a new "game" instance, OverWorld. I thought that by using 
+           an entity on the overworld itself to load a level, it would work (unfortunately it does not). 
+           After testing with including all of the director code in the OverWorld game instance, I am 
+           able to load levels (although this method seems improper). I'm starting to wonder if we even
+           need the director plugin anymore, as it is unclear to me exactly how levels are being loaded
+           (since director has it's own loadLevel() method, which overrides ImpactJS's loadLevel() method,
+           which both are then overrided again by the door.js's loadLevel() method, argh!). I will probably 
+           experiment a bit more with this, but any and all ideas/attempts are welcome.
+
+    More Notes: For reference, the reason why I used a seperate game instance for this specific level 
+                is because it requires a different player sprite/controls.
+
+    Even more notes: Here is how I envision the overworld working:
+
+            1. Overworld level is loaded. Player can navigate to a level and play it.
+            2. By clicking an entity on the overworld, load the corresponding level.
+            3. After getting to the end of the level, the player will collect an entity which
+               will complete the level and take the player back to the overworld. 
+            4. It would be great to be able to replace the level graphic on the overworld
+               with a new graphic to represent the level being beaten. Not sure how to do 
+               this.
+            5. Also, we need a method of blocking off the overworld (so that a player can not
+               move past a level they have not beaten. A lock of some sorts). 
+            6. Rinse and repeat 1-5. 
+
+
+2. Using pipes to transition to levels (instead of the door graphic). [ Kevin ]
+
+    It was mentioned before that we should add pipes to transition between levels. To do this, 
+    we can simply use the new pipes graphics that I have inserted (pipes.png, size is 32 x 32)
+    and use the door.js entity to handle the transitions. It would be nice to have some sort of
+    animation of actually entering the pipe.
+
+
+  
+***********************
+* Feature Inspiration *
+***********************
+
+A while back, I stumbled upon this amazing extension of ImpactJS: http://collinhover.github.io/impactplusplus/
+There are a number of features, some of which include methods to make buttons, text, and UI elements, abstractions for 
+creating upgrades and abilities (as well as enemy AI's), and a bunch of other things. My favorite feature is located in
+this demo:     http://coldspace.henklein.com/plugin_demo/
+The above link shows how to make a level very dark and shadowy (Of course this would be my favorite one), although it seems
+that this isn't a feature you can turn on only for a single level without some hacks. It would be great to have the shadow
+casting atmosphere for a castle level.
+
+Anyways, I don't have any experience with using Impactplusplus, but if anyone finds a feature they'd like to implement from it, go right ahead. 
+The documentation seems to be pretty good, although at times it is unclear exactly how to integrate the impactplusplus code with ImpactJS.
+Some notable things to check out for the future:
+
+  1. The shadow casting code.
+  2. The methods for creating UI elements. Eventually we'll be building GUI's.
+  3. Perhaps the methods for enemies, might lead to even more creative AI's using Astar pathfinding methods.
+
+
+***************
+* New Enemies *
+***************
+
+1. Bowser Statue [ NOT TAKEN YET ]
+
+   - Graphics file: media/enemies/bowser_statue.png   Size: 24 x 24.
+   - Behavior: Completely stationary. It spawns a flame periodically. (Flame graphic is located in enemies/flame.png.
+     Note: The flame goes through all objects and only collides with the player.
+
+2. Swooper [ NOT TAKEN YET ]
+
+   - Graphics file: media/enemies/swooper.png         Frame sizes: 16 x 16
+   - Behavior: The swooper is initally positioned hanging on the ceiling. As the player is approaching, it attempts
+               to swoop down and collide with the player. If it misses, it simply keeps moving left. Frame [2] is 
+               the idle state, while frames [1], [0] are the swooping animations. For a visual aid on how it works,
+               check out this video: http://www.youtube.com/watch?v=Dtm9ZGcHQho
+     Note: To bypass having to calculate angles for the attack, it's probably best if you target the player from as wide
+     as a range as possibly, taking in mind the actual range at which an enemy will be spawned by the enemy_spawner
+    entity. 
+
+3. Pink Muncher [ NOT TAKEN YET ] 
+
+    - Graphics file: media/enemies/pink_muncher.png  Frame sizes: 16 x 16
+    - Behavior: 
+              1. Detects the player.
+              2. If player is not close to it (you can determine what is "too close"), it plays frames [0], [1].
+              3. If the player is getting close, it starts to jump up a few pixels (playing frame [2],[3]) and
+                 repeatedly jumps back up everytime it lands.
+              Note: The purpose of this enemy is to jump up and try to hit the player from below as they try to
+                    jump over it. It's up to the programmer to decide how high is enough, but note that the point
+                    of this enemy is to make the player be cautious of how high they jump (otherwise they'll get
+                    hit). 
+              4. If the player is not "close", revert back to it's first two frames. 
+
+
