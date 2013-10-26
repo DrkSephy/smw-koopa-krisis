@@ -22,71 +22,24 @@ To-do (October 4th, 2013 -> October 18th, 2013)
     2. If the player jumps on it, it turns into bones.
     3. After a few seconds, it regenerates to it's normal form.
 
+      - STATUS: IN PROGRESS.
 
+To-do (October 25th, 2013 -> November 1st, 2013)
+------------------------------------------------
 
-****************************
-* List of new things to do *
-****************************
-As stated in my recent e-mail, if you would like to take up any of the following things, feel free to do so by 
-including your name next to the task.
-
-1. Overworld [ David / ??? ]
-    
-    Notes: After tinkering around with this, I'm not sure of a good way to do this. Currently, the overworld
-           is a level itself which is loaded in a new "game" instance, OverWorld. I thought that by using 
-           an entity on the overworld itself to load a level, it would work (unfortunately it does not). 
-           After testing with including all of the director code in the OverWorld game instance, I am 
-           able to load levels (although this method seems improper). I'm starting to wonder if we even
-           need the director plugin anymore, as it is unclear to me exactly how levels are being loaded
-           (since director has it's own loadLevel() method, which overrides ImpactJS's loadLevel() method,
-           which both are then overrided again by the door.js's loadLevel() method, argh!). I will probably 
-           experiment a bit more with this, but any and all ideas/attempts are welcome.
-
-    More Notes: For reference, the reason why I used a seperate game instance for this specific level 
-                is because it requires a different player sprite/controls.
-
-    Even more notes: Here is how I envision the overworld working:
-
-            1. Overworld level is loaded. Player can navigate to a level and play it.
-            2. By clicking an entity on the overworld, load the corresponding level.
-            3. After getting to the end of the level, the player will collect an entity which
-               will complete the level and take the player back to the overworld. 
-            4. It would be great to be able to replace the level graphic on the overworld
-               with a new graphic to represent the level being beaten. Not sure how to do 
-               this.
-            5. Also, we need a method of blocking off the overworld (so that a player can not
-               move past a level they have not beaten. A lock of some sorts). 
-            6. Rinse and repeat 1-5. 
-
-
-2. Using pipes to transition to levels (instead of the door graphic). [ Kevin ]
-
-    It was mentioned before that we should add pipes to transition between levels. To do this, 
-    we can simply use the new pipes graphics that I have inserted (pipes.png, size is 32 x 32)
-    and use the door.js entity to handle the transitions. It would be nice to have some sort of
-    animation of actually entering the pipe.
-
-
+1. Fix bugs regarding ladder. [ Kevin? ]
   
-***********************
-* Feature Inspiration *
-***********************
+    - I don't remember the bug, but I recall one. 
 
-A while back, I stumbled upon this amazing extension of ImpactJS: http://collinhover.github.io/impactplusplus/
-There are a number of features, some of which include methods to make buttons, text, and UI elements, abstractions for 
-creating upgrades and abilities (as well as enemy AI's), and a bunch of other things. My favorite feature is located in
-this demo:     http://coldspace.henklein.com/plugin_demo/
-The above link shows how to make a level very dark and shadowy (Of course this would be my favorite one), although it seems
-that this isn't a feature you can turn on only for a single level without some hacks. It would be great to have the shadow
-casting atmosphere for a castle level.
+2. Add new player spawn position to ladder. [ Kevin? ]
 
-Anyways, I don't have any experience with using Impactplusplus, but if anyone finds a feature they'd like to implement from it, go right ahead. 
-The documentation seems to be pretty good, although at times it is unclear exactly how to integrate the impactplusplus code with ImpactJS.
-Some notable things to check out for the future:
+    - Add a new key-value property to set the player's spawn position for a level.
 
-  1. The shadow casting code.
-  2. The methods for creating UI elements. Eventually we'll be building GUI's.
-  3. Perhaps the methods for enemies, might lead to even more creative AI's using Astar pathfinding methods.
+3. Overworld. [ David ]
+
+    - Create some sort of level selection screen. I've got a few new ideas.
+
+
 
 
 ***************
