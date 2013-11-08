@@ -1,69 +1,34 @@
-Long-Term Goals
----------------
+Final List of things to do
+--------------------------
+We are nearing the end of Phase 1 of our game. Woo! Here is the final list of things.
 
 
-To-do (October 4th, 2013 -> October 18th, 2013)
------------------------------------------------
+1. Add new player spawn position to pipe. [ Kevin ]
 
-1. Fire Brothers [ Kim ]
+    - Add a new key-value property to set the player's spawn position for a level
+      transition. This way we can spawn the player in a set location.
 
-    - Shoots a series of fireballs (spread out over time), then has a cool down, then begins to fire again. 
-      The graphics file to use is firebros.png. (Note: size is 24 x 24).
+2. Overworld Stuff [ Kevin ]
 
+    - Test if we can load different player sprites for different levels. This 
+    will allow us to bypass different states.
 
-2. Skeleton [ Kim ] 
+    - Figure out how to store the player's state after transitioning levels.
+    i.e: Save number of coins, lives, etc.
 
-    Graphics file: skeleton.png
-    Note: Size of each frame is 33 x 26. 
-
-    Behavior
-    --------
-    1. Walks back and forth (it does not fall off ledges, see ledge detection code).
-    2. If the player jumps on it, it turns into bones.
-    3. After a few seconds, it regenerates to it's normal form.
-
-      - STATUS: IN PROGRESS.
-
-To-do (October 25th, 2013 -> November 1st, 2013)
-------------------------------------------------
-
-1. Fix bugs regarding ladder. [ Kevin? ]
-  
-    - I don't remember the bug, but I recall one. 
-
-2. Add new player spawn position to ladder. [ Kevin? ]
-
-    - Add a new key-value property to set the player's spawn position for a level.
-
-3. Overworld. [ David ]
-
-    - Create some sort of level selection screen. I've got a few new ideas.
-
-
-
+3. Touch up all enemy Graphics, behaviors, damages and stats. [ David ]s
 
 ***************
 * New Enemies *
 ***************
 
-1. Bowser Statue [ NOT TAKEN YET ]
+1. Bowser Statue [ Kim ]
 
    - Graphics file: media/enemies/bowser_statue.png   Size: 24 x 24.
    - Behavior: Completely stationary. It spawns a flame periodically. (Flame graphic is located in enemies/flame.png.
      Note: The flame goes through all objects and only collides with the player.
 
-2. Swooper [ NOT TAKEN YET ]
-
-   - Graphics file: media/enemies/swooper.png         Frame sizes: 16 x 16
-   - Behavior: The swooper is initally positioned hanging on the ceiling. As the player is approaching, it attempts
-               to swoop down and collide with the player. If it misses, it simply keeps moving left. Frame [2] is 
-               the idle state, while frames [1], [0] are the swooping animations. For a visual aid on how it works,
-               check out this video: http://www.youtube.com/watch?v=Dtm9ZGcHQho
-     Note: To bypass having to calculate angles for the attack, it's probably best if you target the player from as wide
-     as a range as possibly, taking in mind the actual range at which an enemy will be spawned by the enemy_spawner
-    entity. 
-
-3. Pink Muncher [ NOT TAKEN YET ] 
+2. Pink Muncher [ Kim ] 
 
     - Graphics file: media/enemies/pink_muncher.png  Frame sizes: 16 x 16
     - Behavior: 

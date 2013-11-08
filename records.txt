@@ -201,5 +201,39 @@ levels with, it's time that we get this fixed.
     and use the door.js entity to handle the transitions. It would be nice to have some sort of
     animation of actually entering the pipe.
 
+    - COMPLETED.
+
+
+
+To-do (October 4th, 2013 -> October 18th, 2013)
+-----------------------------------------------
+
+1. Fire Brothers [ Kim ]
+
+    - Shoots a series of fireballs (spread out over time), then has a cool down, then begins to fire again. 
+      The graphics file to use is firebros.png. (Note: size is 24 x 24).
+
+
+2. Skeleton [ Kim ] 
+
+    Graphics file: skeleton.png
+    Note: Size of each frame is 33 x 26. 
+
+    Behavior
+    --------
+    1. Walks back and forth (it does not fall off ledges, see ledge detection code).
+    2. If the player jumps on it, it turns into bones.
+    3. After a few seconds, it regenerates to it's normal form.
+
+      - STATUS: IN PROGRESS.
+
+
+To-do (October 25th, 2013 -> November 1st, 2013)
+------------------------------------------------
+
+1. Fix bugs regarding ladder. [ Kevin? ]
+  
+    - I don't remember the bug, but I recall one. 
+
 
 
