@@ -22,7 +22,7 @@ We are nearing the end of Phase 1 of our game. Woo! Here is the final list of th
 * New Enemies *
 ***************
 
-1. Bowser Statue [ Kim ]
+1. Bowser Statue [ Kim ] - complete
 
    - Graphics file: media/enemies/bowser_statue.png   Size: 24 x 24.
    - Behavior: Completely stationary. It spawns a flame periodically. (Flame graphic is located in enemies/flame.png.
