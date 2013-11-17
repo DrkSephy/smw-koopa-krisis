@@ -1,0 +1,9 @@
+syntax: glob
+tools/**
+weltmeister.html
+python-impact/**
+lib/impact
+lib/weltmeister
+lib/game/levels/DeepForest.js
+media/sounds/**
+*DS_Store*

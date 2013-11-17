@@ -1,0 +1,45 @@
+Final List of things to do
+--------------------------
+We are nearing the end of Phase 1 of our game. Woo! Here is the final list of things.
+
+
+1. Add new player spawn position to pipe. [ Kevin ]
+
+    - Add a new key-value property to set the player's spawn position for a level
+      transition. This way we can spawn the player in a set location.
+
+2. Overworld Stuff [ Kevin ]
+
+    - Test if we can load different player sprites for different levels. This 
+    will allow us to bypass different states.
+
+    - Figure out how to store the player's state after transitioning levels.
+    i.e: Save number of coins, lives, etc.
+
+3. Touch up all enemy Graphics, behaviors, damages and stats. [ David ]s
+
+***************
+* New Enemies *
+***************
+
+1. Bowser Statue [ Kim ] - complete
+
+   - Graphics file: media/enemies/bowser_statue.png   Size: 24 x 24.
+   - Behavior: Completely stationary. It spawns a flame periodically. (Flame graphic is located in enemies/flame.png.
+     Note: The flame goes through all objects and only collides with the player.
+
+2. Pink Muncher [ Kim ] 
+
+    - Graphics file: media/enemies/pink_muncher.png  Frame sizes: 16 x 16
+    - Behavior: 
+              1. Detects the player.
+              2. If player is not close to it (you can determine what is "too close"), it plays frames [0], [1].
+              3. If the player is getting close, it starts to jump up a few pixels (playing frame [2],[3]) and
+                 repeatedly jumps back up everytime it lands.
+              Note: The purpose of this enemy is to jump up and try to hit the player from below as they try to
+                    jump over it. It's up to the programmer to decide how high is enough, but note that the point
+                    of this enemy is to make the player be cautious of how high they jump (otherwise they'll get
+                    hit). 
+              4. If the player is not "close", revert back to it's first two frames. 
+
+
