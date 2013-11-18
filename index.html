@@ -6,7 +6,7 @@
 	<title>SMW Koopa Krisis</title>
 	<style type="text/css">
 		html,body {
-			background-color: #333;
+			background-color: #000;
 			color: #fff;
 			font-family: helvetica, arial, sans-serif;
 			margin: 0;
@@ -22,13 +22,41 @@
 			bottom: 0;
 			margin: auto;
 		}
+
+		h1 {
+			margin-top:50px;
+		}
+
+		#footer {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 30px;
+		}
+
+		#home {
+			position: absolute;
+			top:10px;
+			left:10px;
+			color: white;
+		}
 	</style>
 
 	<script type="text/javascript" src="lib/impact/impact.js"></script>
 	<script type="text/javascript" src="lib/game/main.js"></script>
 </head>
 <body>
+	<center><h1> Super Mario World: Koopa Krisis </h1></center>
 	<canvas id="canvas"></canvas>
+	<div id="footer">
+		<center id="Gamepad">
+			<p> Jump: X, Attack: C, Interact with ladders/doors: Space Bar</p>
+		</center>
+		<center id="credits">
+			Made by the City College of New York ACM Game Development Group<br/>
+			Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau
+		</center>
+	</div>
     <button id="pause">PAUSE</button>
     <script type="text/javascript" src="lib/game/pause.js"></script>
 </body>
