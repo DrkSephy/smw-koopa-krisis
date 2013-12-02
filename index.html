@@ -27,11 +27,16 @@
 			margin-top:50px;
 		}
 
-		#footer {
+        header {
+            text-align: center;
+        }
+
+		footer {
 			position: absolute;
 			left: 0;
 			right: 0;
 			bottom: 30px;
+            text-align: center;
 		}
 
 		#home {
@@ -46,17 +51,15 @@
 	<script type="text/javascript" src="lib/game/main.js"></script>
 </head>
 <body>
-	<center><h1> Super Mario World: Koopa Krisis </h1></center>
+    <header>
+        <h1>Super Mario World: Koopa Krisis</h1>
+    </header>
 	<canvas id="canvas"></canvas>
-	<div id="footer">
-		<center id="Gamepad">
-			<p> Jump: X, Attack: C, Interact with ladders/doors: Space Bar</p>
-		</center>
-		<center id="credits">
-			Made by the City College of New York ACM Game Development Group<br/>
-			Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau
-		</center>
-	</div>
+    <footer>
+        <p> Jump: X, Attack: C, Interact with ladders/doors: Space Bar</p>
+        <p>Made by the City College of New York ACM Game Development Group<br/>
+        Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau</p>
+    </footer>
     <button id="pause">PAUSE</button>
     <script type="text/javascript" src="lib/game/pause.js"></script>
 </body>
