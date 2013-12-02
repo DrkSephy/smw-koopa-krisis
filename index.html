@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="/media/life-sprite.png" />
-	<title>SMW Koopa Krisis</title>
-	<style type="text/css">
-		html, body {
-			background-color: #000000;
+    <meta charset="utf-8">
+    <title>SMW Koopa Krisis</title>
+    <style type="text/css">
+        html, body {
+            background-color: #000000;
 			color: #FFFFFF;
 			font-family: helvetica, arial, sans-serif;
 			margin: 0;
-			padding: 0;
-            width: 100%;
-		}
-
-		#canvas {
-			margin: 0 auto;
-            display: block;
-		}
-
-        header {
-            margin-top: 50px;
             text-align: center;
-        }
+		}
+
+        header { margin: 40px auto 50px; }
 
 		footer {
+            background-color: #000000;
+            bottom: 35px;
+            font-size: small;
             position: fixed;
-            bottom: 30px;
-            text-align: center;
             width: 100%;
 		}
 	</style>
@@ -39,13 +30,16 @@
     <header>
         <h1>Super Mario World: Koopa Krisis</h1>
     </header>
-	<canvas id="canvas"></canvas>
-    <footer>
-        <p> Jump: X, Attack: C, Interact with ladders/doors: Space Bar</p>
-        <p>Made by the City College of New York ACM Game Development Group<br/>
-        Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau</p>
-    </footer>
+
+    <canvas id="canvas"></canvas><br>
     <button id="pause">PAUSE</button>
+
+    <footer>
+        Jump: X, Attack: C, Interact with ladders/doors: Space Bar<hr>
+        Made by the City College of New York ACM Game Development Group<br>
+        Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau
+    </footer>
+
     <script type="text/javascript" src="lib/game/pause.js"></script>
 </body>
 </html>
