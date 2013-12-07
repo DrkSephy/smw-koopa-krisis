@@ -1,0 +1,18 @@
+Final List of things to do
+--------------------------
+We are nearing the end of Phase 1 of our game. Woo! Here is the final list of things.
+
+
+1. Overworld Stuff [ ? ]
+
+    - Test if we can load different player sprites for different levels. This
+    will allow us to bypass different states.
+
+2. Touch up all enemy Graphics, behaviors, damages and stats. [ David ]
+
+***************
+* New Enemies *
+***************
+
+(none at the moment)
+
