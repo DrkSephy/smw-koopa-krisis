@@ -2,27 +2,26 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Super Mario Koopa Krisis is a non-profit derivative work
-    of Nintendo's Super Mario World developed strictly for educational purposes. Made by the City College of New York ACM Game Development Group: Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau">
+    <meta name="description" content="Super Mario Koopa Krisis is a non-profit derivative work of Nintendo's Super Mario World developed strictly for educational purposes. Made by the City College of New York ACM Game Development Group: Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau">
     <title>SMW Koopa Krisis</title>
     <style type="text/css">
         html, body {
             background-color: #000000;
             color: #FFFFFF;
             font-family: helvetica, arial, sans-serif;
+            height: 100%;
             margin: 0;
             text-align: center;
         }
 
         header { margin: 40px auto 50px; }
 
+        #instructions { height: calc(100% - 756px); }
+
         footer {
             background-color: #000000;
-            bottom: 35px;
-            margin: 35px;
             font-size: small;
-            /*position: fixed;*/
-            width: 100%;
+            margin: 0 20px 50px;
         }
     </style>
 
@@ -37,17 +36,18 @@
     <canvas id="canvas"></canvas><br>
     <button id="pause">PAUSE</button>
 
+    <div id="instructions">
+        <p>Move left/right: <code>Left/Right Arrow</code> ,  Jump: <code>X</code> ,  Attack: <code>C</code><br>
+        Use doors/pipes: <code>Space Bar</code> ,  Climb up/down ladders: <code>Up/Down Arrow</code></p>
+    </div>
+
     <footer>
-        Jump: X, Attack: C, Interact with ladders/doors: Space Bar<hr>
-        Made by the City College of New York ACM Game Development Group<br>
-
-        <h2> What is Super Mario World Koopa Krisis? </h2>
+        <p>Made by the City College of New York ACM Game Development Group</p>
+        <p>Super Mario World Koopa Krisis is a non-profit derivative work of Nintendo's Super Mario World developed strictly for educational purposes. Mario, enemies, powerups, coins, and item blocks are property of Nintendo. The City College of New York ACM is not affiliated with Nintendo.</p>
+        <hr>
+        <h2>What is Super Mario World Koopa Krisis?</h2>
         <p>Stuff goes here.</p>
-
-        <p>Super Mario Koopa Krisis is a non-profit derivative work of Nintendo's Super Mario World developed strictly for educational purposes. Mario, enemies, powerups, coins and item blocks are property of Nintendo. The ACM is not affiliated with Nintendo.</p>
     </footer>
-
-
 
     <script type="text/javascript" src="lib/game/pause.js"></script>
 </body>
