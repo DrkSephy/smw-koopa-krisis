@@ -2,27 +2,26 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Super Mario Koopa Krisis is a non-profit derivative work
-    of Nintendo's Super Mario World developed strictly for educational purposes. Made by the City College of New York ACM Game Development Group: Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau">
+    <meta name="description" content="Super Mario Koopa Krisis is a non-profit derivative work of Nintendo's Super Mario World developed strictly for educational purposes. Made by the City College of New York ACM Game Development Group: Kevin Chan, David Leonard, Ian McBride, Wan Kim Mok, Jonathan Reyes, Jorge Yau">
     <title>SMW Koopa Krisis</title>
     <style type="text/css">
         html, body {
             background-color: #000000;
             color: #FFFFFF;
             font-family: helvetica, arial, sans-serif;
+            height: 100%;
             margin: 0;
             text-align: center;
         }
 
         header { margin: 40px auto 50px; }
 
+        #instructions { height: calc(100% - 756px); }
+
         footer {
             background-color: #000000;
-            bottom: 35px;
-            margin-top: 20px;
             font-size: small;
-            /*position: fixed;*/
-            width: 100%;
+            margin: 0 20px 50px;
         }
     </style>
 
@@ -37,19 +36,18 @@
     <canvas id="canvas"></canvas><br>
     <button id="pause">PAUSE</button>
 
+    <div id="instructions">
+        <p>Move left/right: <code>Left/Right Arrow</code> ,  Jump: <code>X</code> ,  Attack: <code>C</code><br>
+        Use doors/pipes: <code>Space Bar</code> ,  Climb up/down ladders: <code>Up/Down Arrow</code></p>
+    </div>
+
     <footer>
-        MOVE: Arrow keys, JUMP (Hold to jump higher): X, ATTACK: C, INTERACT with doors/pipes: Space Bar, CLIMB LADDERS: Up arrow<hr>
-        Made by the City College of New York ACM Game Development Group<br>
-
-        <h2> What is Super Mario World: Koopa Krisis? </h2>
-        <p>Super Mario World: Koopa Krisis is a game created to learn more about ImpactJS and JavaScript, while trying to build a starter RPG game. <br>
-            Our next installment will feature a 2D side scrolling action RPG, built using the features within this game.</p>
-
-        <h2> A Note on Copyrights </h2>
-        <p>Super Mario Koopa Krisis is a non-profit derivative work of Nintendo's Super Mario World developed strictly for educational purposes. <br>Mario, enemies, powerups, coins, music and item blocks are property of Nintendo. The ACM is not affiliated with Nintendo.</p>
+        <p>Made by the City College of New York ACM Game Development Group</p>
+        <p>Super Mario World Koopa Krisis is a non-profit derivative work of Nintendo's Super Mario World developed strictly for educational purposes. Mario, enemies, powerups, coins, and item blocks are property of Nintendo. The City College of New York ACM is not affiliated with Nintendo.</p>
+        <hr>
+        <h2>What is Super Mario World Koopa Krisis?</h2>
+        <p>Stuff goes here.</p>
     </footer>
-
-
 
     <script type="text/javascript" src="lib/game/pause.js"></script>
 </body>
