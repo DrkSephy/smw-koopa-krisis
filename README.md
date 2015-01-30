@@ -1,3 +1,5 @@
+Super Mario World - Koopa Krisis aims to recreate the original Super Mario World (SMW) platformer from the Super Nintendo (SNES) using JavaScript, HTML5 and CSS. This game uses the ImpactJS game engine, which is ideal for games involving 2D graphics, side-scrolling, collisions and comes with its own level editor (named Weltmeister).
+
 This project also aims to be a foundation for a potential project 
 for the CCNY Association of Computing Machinery (ACM) Game Development
 Special Interest Group(SIG). 
