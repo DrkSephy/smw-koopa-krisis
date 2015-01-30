@@ -1,4 +1,3 @@
-k.vd kashbc;ajsbcs
 This project also aims to be a foundation for a potential project 
 for the CCNY Association of Computing Machinery (ACM) Game Development
 Special Interest Group(SIG). 
