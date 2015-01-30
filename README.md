@@ -1,9 +1,4 @@
- ***Super Mario World - Koopa Krisis*** aims to recreate the original
-Super Mario World (SMW) platformer from the Super Nintendo (SNES) using
-JavaScript, HTML5 and CSS. This game uses the ImpactJS game engine,
-which is ideal for games involving 2D graphics, side-scrolling, 
-collisions and comes with its own level editor (named Weltmeister). 
-
+k.vd kashbc;ajsbcs
 This project also aims to be a foundation for a potential project 
 for the CCNY Association of Computing Machinery (ACM) Game Development
 Special Interest Group(SIG). 
@@ -40,10 +35,10 @@ Installing PHP is discussed [here](https://bitbucket.org/DrkSephy/smw-koopa-kris
 
 ##Contributors
 ----
-* David Leonard <https://bitbucket.org/DrkSephy>
+* David Leonard <https://github.com/DrkSephy>
 * Ian McBride: <https://bitbucket.org/ian_s_mcb>
 * Wan Kim Mok: <https://bitbucket.org/mk200789>
-* Kevin Chan: <https://bitbucket.org/chessmasterhong>
+* Kevin Chan: <https://github.com/chessmasterhong>
 * Jorge Yau:  <https://bitbucket.org/accountname>
 * Jonathan Reyes: <https://bitbucket.org/JARey>
 
